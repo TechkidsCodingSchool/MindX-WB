@@ -1,0 +1,14 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#avatar {
+    margin-top: 100px;
+    width: 200px;
+    transition: 1s;
+}
+
+#avatar:hover {
+    width: 400px;
+}

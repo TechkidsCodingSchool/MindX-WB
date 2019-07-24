@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body id="container">
+        <center>
+            <img id="bulb" src="imgs/bulbon.gif">
+            <br>
+            <br>
+            <button onclick="turnOn()">On</button>
+            <button onclick="turnOff()">Off</button>
+        </center>
+        <audio controls>
+            <source src="audios/music.mp3" type="audio/mpeg">
+        </audio>
+    </body>
+    <script>
+        var bulb = document.getElementById('bulb');
+        var container = document.getElementById('container');
+
+        function turnOff() {
+            bulb.src= "imgs/bulboff.gif"
+            container.style="background-color: black"
+        }
+
+        function turnOn() {
+            bulb.src= "imgs/bulbon.gif"
+            container.style="background-color: white"
+        }
+
+        setInterval(() => {
+            turnOff();
+        }, 1000);
+
+        setInterval(() => {
+            turnOn();
+        }, 1500);
+    </script>
+</html>

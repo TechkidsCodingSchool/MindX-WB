@@ -1,0 +1,18 @@
+#bulb {
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../imgs/bulboff.gif")
+}
+
+#bulb:hover {
+    background-image: url("../imgs/bulbon.gif")
+}
+ 
+#container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
